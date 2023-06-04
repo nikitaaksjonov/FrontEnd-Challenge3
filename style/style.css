@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-thankyou, .container{
+    max-width: 350px;
+    min-height: 350px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:   hsl(213, 19%, 18%);
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    transform: translate(0, 50%)
+    
+}
+.container-thankyou>*, .container>*{
+    width: 80%;
+    margin: 10px;
+}
+.container-thankyou p, .container p, .rate-container ul li{
+    color: hsl(217, 12%, 63%);
+}
+.rate-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rate-container ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.rate-container ul :hover{
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+.container button{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+.selected{
+    color:hsl(25, 97%, 53%);
+    border-radius: 15px;
+    width: auto;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container-thankyou p{
+    width: 77%;
+}
+.container-thankyou{
+    text-align: center;
+    position: relative;
+    top: -350px;
+    z-index: -1;
+}
+.star, .rate-container ul li, .selected {
+    background-color: hsl(213deg 21.48% 25.67% / 50%);;
+}
+.star, .rate-container ul li, .container button{
+    height: 6vh;
+}
+.star, .rate-container ul li{
+    width: 6vh;
+    border-radius: 50%;
+}
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selected, .container button, .container-thankyou p, .container p{
+    font-size: 12px;
+}
+.thankyou-picture-container img{
+    max-width: 145px;
+}
+.attribution{
+    color: rgb(149, 24, 24);
+    text-align: center;
+    background: linear-gradient(90deg, rgba(0,161,75,1) 10%, rgba(255,0,0,1) 50%, rgba(255,175,0,1) 90%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    max-width: 300px;
+    margin: 0 auto;
+}
+/* .container{
+    z-index: -2;
+} */

@@ -46,7 +46,7 @@ function applyStyles(item) {
     const itemNumber = item.textContent.trim(); // Extract the number from the item
     console.log(itemNumber);
     selected.textContent=`You selected ${itemNumber} out of 5`;
+    btn.addEventListener("click", () => { 
+        modal.style.zIndex = '3';
+    });
 }
-btn.addEventListener("click", () => { 
-    modal.style.zIndex = '3';
-});
